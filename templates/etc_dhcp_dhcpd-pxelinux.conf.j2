@@ -6,11 +6,11 @@ max-lease-time 7200;
 option arch code 93 = unsigned integer 16; # RFC4578
 set pxetype = option arch;
 
-#{{ pxeserver_config.subnet }} {{pxeserver_config.netmask}}
+# {{pxeserver_config.netmask}}
 
-subnet 192.168.50.0 netmask 255.255.255.0 {
-  range 192.168.50.128 192.168.50.254;
-  option broadcast-address 192.168.50.255;
+subnet {{pxeserver_config.subnet}} netmask {{pxeserver_config.netmask}} {
+  range {{pxeserver_config.range_from}} {{pxeserver_config.range_to}};
+  option broadcast-address {{pxeserver_config.broadcast_address}};
   option domain-name-servers {{ pxeserver_ip }};
   option domain-name localdomain;
   default-lease-time 1800;
