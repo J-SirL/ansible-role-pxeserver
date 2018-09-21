@@ -5,3 +5,5 @@ pxeserver_directory: "pxelinux"
 pxeserver_path: "{{ tftp_root_directory }}/{{ pxeserver_directory }}"
 pxeserver_ip: "{{ ansible_default_ipv4.address }}"
 pxeserver_images: []
+pxserver_OS_dist_centos_url: 'http://mirror.nsc.liu.se/CentOS/7/os/x86_64/isolinux' 
+

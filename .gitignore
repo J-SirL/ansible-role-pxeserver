@@ -11,3 +11,6 @@
 
 # Ignore role dependencies (installed from Ansible Galaxy)
 tests/roles/*.*
+
+#ignore annoying retry files
+.retry
