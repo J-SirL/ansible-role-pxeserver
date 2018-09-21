@@ -13,4 +13,4 @@
 tests/roles/*.*
 
 #ignore annoying retry files
-.retry
+*.retry
