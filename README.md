@@ -31,7 +31,8 @@ No specific requirements
 | :---                    | :---                         | :---                                                             |
 | `subnet`                |     192.168.50.0             | Default subnet address                                           |
 | `netmask`               |     255.255.255.0            | Default subnetmask /24                                           |
-| `range_from`            |     192.168.50.128           | Default subnet range                                             |
+| `range_from`            |     192.168.50.128           | Default subnet from range                                        |
+| `range_to`              |     192.168.50.254           | Default subnet to range                                          |
 
 ```
 pxeserver_config:
