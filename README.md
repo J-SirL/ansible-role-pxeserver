@@ -23,7 +23,7 @@ No specific requirements
 | `pxeserver_directory` | `pxelinux`                     | Subdirectory under TFTP root for PXE specific files              |
 | `pxeserver_images`    | []                             | List of dicts specifying PXEboot images to be served. See below. |
 | `pxeserver_ip`        | `ansible_default_ipv4.address` | IP address of the PXE server                                     |
-|||
+|||7200
 
 *Default variables and dictonary lists*
 
@@ -39,6 +39,7 @@ No specific requirements
 | `max_lease_time`        |     7200                     | Default MAX lease time                                           |
 
 
+*This is the example declaration of the pxeserver_config that I have set as default values*
 ```
 pxeserver_config:
     subnet: '192.168.50.0'
@@ -50,6 +51,12 @@ pxeserver_config:
     default_lease_time: 1800
     max_lease_time: 7200
 ```
+example of accessing the list values:
+```
+{{ pxeserver_config.subnet }}
+{ pxeserver_config.domain }}
+```
+
 You can specify the boot images to be served with the variable `pxeserver_images`, a dict containing the keys listed below. Keys are *mandatory* unless specified.
 
 | Key              | Value                                                             |
