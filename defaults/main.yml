@@ -10,9 +10,6 @@ pxeserver_images: []
 #OSURL
 pxserver_OS_dist_centos_url: 'http://mirror.nsc.liu.se/CentOS/7/os/x86_64/isolinux' 
 
-#pxeserver config details
-#pxeserver_config_subnet:
-#pxeserver_config_netmask:
 pxeserver_config:
     subnet: '192.168.50.0'
     netmask: '255.255.255.0'
