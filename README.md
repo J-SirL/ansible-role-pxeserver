@@ -1,5 +1,6 @@
 # Ansible role `pxeserver`
-## Created by Bert Van Vreckem 2014 Forked and modyfied by Johan Sörell https://github.com/J-SirL Sept 2018.
+## Created by Bert Van Vreckem 2014
+## Forked Sept 2018 and modified by Johan Sörell https://github.com/J-SirL .
 
 An Ansible role for setting up a PXE boot server.
 
