@@ -21,4 +21,4 @@ pxeserver_config:
     broadcast_address: 192.168.50.255
     domain: localdomain
     default_lease_time: 1800
-    pxeserver_config.max_lease_time: 7200
+    max_lease_time: 7200
