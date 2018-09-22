@@ -35,6 +35,8 @@ No specific requirements
 | `range_to`              |     192.168.50.254           | Default subnet to range                                          |
 | `broadcast_address`     |     192.168.50.255           | Default subnet broadcastaddress                                  |
 | `domain`                |     localdomain              | Default domain                                                   |
+| `default_lease_time`    |     1800                     | Default lease time                                               |
+| `max_lease_time`        |     7200                     | Default MAX lease time                                           |
 
 
 ```
