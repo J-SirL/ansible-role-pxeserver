@@ -1,6 +1,6 @@
 # Ansible role `pxeserver`
 ## Created by Bert Van Vreckem 2014
-## Forked Sept 2018 and modified by Johan Sörell https://github.com/J-SirL .
+## Forked and modified Sept 2018 by Johan Sörell https://github.com/J-SirL .
 
 An Ansible role for setting up a PXE boot server.
 
@@ -25,7 +25,9 @@ No specific requirements
 | `pxeserver_ip`        | `ansible_default_ipv4.address` | IP address of the PXE server                                     |
 |||
 
+*Default variables and dictonary lists*
 | Dictonary list:         |  `pxeserver_config` 
+```
 pxeserver_config:
     subnet: '192.168.50.0'
     netmask: '255.255.255.0'
@@ -35,7 +37,7 @@ pxeserver_config:
     domain: localdomain
     default_lease_time: 1800
     max_lease_time: 7200
-
+```
 You can specify the boot images to be served with the variable `pxeserver_images`, a dict containing the keys listed below. Keys are *mandatory* unless specified.
 
 | Key              | Value                                                             |
