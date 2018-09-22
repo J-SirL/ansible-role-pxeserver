@@ -19,3 +19,6 @@ pxeserver_config:
     range_from: 192.168.50.128 
     range_to: 192.168.50.254
     broadcast_address: 192.168.50.255
+    domain: localdomain
+    default_lease_time: 1800
+    pxeserver_config.max_lease_time: 7200
