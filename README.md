@@ -26,6 +26,7 @@ No specific requirements
 |||
 
 *Default variables and dictonary lists*
+
 | Dictonary list:         |  `pxeserver_config` 
 ```
 pxeserver_config:
