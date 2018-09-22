@@ -54,7 +54,7 @@ pxeserver_config:
 example of accessing the list values:
 ```
 {{ pxeserver_config.subnet }}
-{ pxeserver_config.domain }}
+{{} pxeserver_config.domain }}
 ```
 
 You can specify the boot images to be served with the variable `pxeserver_images`, a dict containing the keys listed below. Keys are *mandatory* unless specified.
